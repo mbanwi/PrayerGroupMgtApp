@@ -41,14 +41,14 @@ module.exports.getUsers = function(callback, limit){
 
 //=========ADD USER module===========
 module.exports.addUser = function(user, callback){
-	//just like in the shell,  this will find a particular genres by its id
+	//just like in the shell,  this will create a particular user by its id
 	User.create(user, callback);
 }
 
 
 //=========GET CONTRIBUTION BY USERID module===========
 module.exports.getContrByUserId = function(id, callback){
-	//just like in the shell,  this will find a particular genres by its id
+	//just like in the shell,  this will find a particular user by its id
 	Book.findById(id, callback);
 
 }
